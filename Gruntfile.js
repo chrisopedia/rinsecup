@@ -14,12 +14,6 @@ module.exports = function( grunt ) {
             vendor : 'ui/vendor',
         },
 
-        // assets configs
-        assets : {
-            stylesheets : grunt.file.readJSON( 'config/stylesheets.json' ),
-            scripts : grunt.file.readJSON( 'config/scripts.json' ),
-        },
-
         // tasks
 
         // clean task to clear out files and folders
