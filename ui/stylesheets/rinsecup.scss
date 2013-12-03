@@ -202,13 +202,13 @@ p {
         content: '';
     }
     .step1::after {
-        background-image: url(/ui/images/icon-step1.png);
+        background-image: url(../images/icon-step1.png);
     }
     .step2::after {
-        background-image: url(/ui/images/icon-step2.png);
+        background-image: url(../images/icon-step2.png);
     }
     .step3::after {
-        background-image: url(/ui/images/icon-step3.png);
+        background-image: url(../images/icon-step3.png);
     }
 }
 .Bumper {
