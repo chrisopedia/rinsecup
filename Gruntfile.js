@@ -34,30 +34,11 @@ module.exports = function( grunt ) {
             server : {}
         },
 
-        // concat task to concat all css & js files
-        concat : {
-            css : {
-                // this comes from a json file
-                src : '<%= assets.stylesheets.files %>',
-                // output here should be the apw-portfolio.v0.2.2
-                dest : '<%= dir.output %>/<%= pkg.name %>.v<%= pkg.version %>.css'
-            },
-            js : {
-                // this comes from a json file
-                src : '<%= assets.scripts.files %>',
-                dest : '<%= dir.output %>/<%= pkg.name %>.v<%= pkg.version %>.js'
-            }
-        },
-
-        // cssmin task to minifiy the css files
-        cssmin: {
-            add_banner : {
-                options: {
-                     banner : '/*! <%= pkg.name %>: version <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-                },
-                files: {
-                    '<%= dir.output %>/<%= pkg.name %>.v<%= pkg.version %>.min.css' : ['<%= dir.output %>/<%= pkg.name %>.v<%= pkg.version %>.css']
-                }
+        jekyll: {
+            options : {
+                serve : true,
+                port: 8000,
+                auto : true
             }
         },
 
@@ -77,13 +58,9 @@ module.exports = function( grunt ) {
                     style : 'expanded',
                     trace : true
                 },
-                files : [{
-                    expand : true,
-                    cwd : '<%= dir.stylesheets %>',
-                    src : ['*.scss'],
-                    dest : '<%= dir.output %>',
-                    ext : '.css'
-                }]
+                files : {
+                    'ui/compressed/rinsecup.css' : 'ui/stylesheets/rinsecup.scss'
+                }
             }
         },
 
@@ -105,16 +82,17 @@ module.exports = function( grunt ) {
                 files : ['Gruntfile.js'],
                 tasks : ['default']
             },
+            jekyll: {
+                files: ['**/*.html'],
+                tasks: ['jekyll']
+            },
+            sass : {
+                files : ['**/*.scss'],
+                tasks : ['sass:dist']
+            },
             scripts: {
                 files: ['<%= dir.scripts %>/**/*.js'],
                 tasks: ['jshint'],
-                options: {
-                    spawn: false,
-                }
-            },
-            styles: {
-                files: ['<%= dir.stylesheets %>/**/*.scss'],
-                tasks: ['sass', 'concat:css'],
                 options: {
                     spawn: false,
                 }

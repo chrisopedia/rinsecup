@@ -1,55 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
+---
+layout: default
+---
 
-    </head>
-    <body>
-        <header id="header" class="Header">
-            <a class="logo" href="/" rel="home"><img src="media/logo.png" alt="Rinse Cup Clean Up logo" /></a>
-            <h1>The safest &amp; easiest way to dispose of the rinse cup in the tattoo industry.</h1>
-            <a href="">Order Now</a>
-            <ul class="Social">
-                <li class="item"><a href="http://facebook.com/rinsecup">Facebook</a></li>
-                <li class="item"><a href="http://facebook.com/rinsecup">Twitter</a></li>
-                <li class="item"><a href="http://instagram.com/rinsecup">Instagram</a></li>
-                <li class="item"><a href="http://pinterest.com/rinsecup">Pinterest</a></li>
-            </ul>
-        </header>
-        <main id="body" class="Body">
-            <img src="media/product-shot.png" alt="Product shot of the Rinse Cup bottle" />
-            <h2>Makes approx. 90 Rinse Cups</h2>
+{% include header.html %}
 
-            <h2>About Rinse Cup</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3>100% Made in the <abbr title="United States of America">USA</abbr></h3>
-            <section id="how-to">
-                <h2>Easy to Use</h2>
-                <ol>
-                    <li>Squeeze Rinse Cup Clean Up into the rinse cup</li>
-                    <li>Wait for 30 seconds</li>
-                    <li>Dispose of rinse cup into trash</li>
-                </ol>
-            </section>
-            <section id="testimonials">
-                <h2>Testimonials</h2>
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <footer><cite>Marcos Camerena</cite> Name of Store</footer>
-                </blockquote>
-            </section>
-            <section id="bumper">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-                <a href="">Order Now</a>
-            </section>
-        </main>
-        <footer id="footer" class="Footer">
-            <small class="copyright">&copy; 2013. Dan McNab.</small>
-            <ul class="Social">
-                <li class="item"><a href="http://facebook.com/rinsecup">Facebook</a></li>
-                <li class="item"><a href="http://facebook.com/rinsecup">Twitter</a></li>
-                <li class="item"><a href="http://instagram.com/rinsecup">Instagram</a></li>
-                <li class="item"><a href="http://pinterest.com/rinsecup">Pinterest</a></li>
-            </ul>
-        </footer>
-    </body>
-</html>
+<main id="body" class="Body">
+    {% include product.html %}
+    {% include how-to.html %}
+    {% comment %}{% include testimonials.html %}{% endcomment %}
+    {% include bumper.html %}
+</main>
+
+{% include footer.html %}

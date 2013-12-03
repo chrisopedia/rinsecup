@@ -1,0 +1,392 @@
+@import 'fonts';
+
+$blue: rgb(2,94,172);
+$blue-gray: rgb(172,184,195);
+$light-blue: rgb(201,209,217);
+$gray: rgb(226,228,231);
+$body: rgb(102,102,102);
+
+/* extends */
+.NOLIST {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    color: rgb(102,102,102);
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+abbr[title] {
+    border-bottom: 0;
+}
+img {
+    max-width: 100%;
+}
+p {
+    margin: 1em 8.333%;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.Heading {
+    display: inline-block;
+    border-color: $gray;
+    border-style: solid;
+    border-width: 1px 0;
+    color: $blue;
+    font-family: 'Mongolian Baiti', 'Times New Roman', serif;
+    font-size: 3.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.Heading.big {
+    font-size: 2.4rem;
+}
+
+.Button {
+    margin: 0;
+    box-shadow: 0 0 4px rgba(0,0,0,.35);
+    padding: 4.166666667%;
+    background-color: $blue;
+    font-family: 'Norwester';
+    font-size: 3.2rem;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    .url {
+        display: block;
+        color: rgb(255,255,255);
+    }
+}
+
+.Social {
+    overflow: hidden;
+    margin: 20px 0;
+    @extend .NOLIST;
+    .item {
+        float: left;
+        width: 20%;
+    }
+    .url {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 100%;
+        color: rgb(255,255,255);
+        line-height: 58px;
+        text-align: center;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    [data-icon]::before {
+        font-family: 'SS Social'; /* BYO icon font, mapped smartly */
+        font-size: 3.2rem;
+        font-style: normal;
+        content: attr(data-icon);
+        speak: none; /* Not to be trusted, but hey. */
+    }
+    .screenreader {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .facebook {
+        background-color: rgb(59,89,152);
+    }
+    .twitter {
+        background-color: rgb(0,172,237);
+    }
+    .instagram {
+        background-color: rgb(63,114,155);
+    }
+    .pinterest {
+        background-color: rgb(201,34,40);
+    }
+    .youtube {
+        background-color: rgb(205,32,31);
+    }
+}
+
+.Frame {
+    padding: 4.1666667% 8.333%;
+}
+.Header {
+    .logo,
+    .tagline {
+        display: block;
+        margin: 4.1666667% 8.333%;
+        color: $blue;
+        font-family: 'Mongolian Baiti', 'Times New Roman', serif;
+        font-size: 2rem;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+}
+.Body {
+    .tips {
+        margin: 1em 8.333%;
+        text-align: left;
+    }
+    .listing {
+        padding: 0 8.333%;
+        text-align: left;
+        list-style: none;
+    }
+    .item {
+        padding: 2px 0 2px 25px;
+        text-indent: -29px;
+    }
+    .item::before {
+        display: inline-block;
+        margin-left: 25px;
+        //padding-right: 1rem;
+        color: $blue;
+        font-size: 2rem;
+        text-indent: -20px;
+        content: '\2022';
+    }
+}
+.HowTo {
+    background-color: $blue;
+    color: rgb(255,255,255);
+    .Heading {
+        color: rgb(255,255,255);
+    }
+    .listing {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        counter-reset: item;
+    }
+    .item {
+        position: relative;
+        margin-bottom: 40px;
+        padding: 120px 0 0 0;
+        line-height: 1.5;
+        text-indent: 0;
+    }
+    .item::before {
+        display: block;
+        margin-left: 25px;
+        color: rgb(255,255,255);
+        font-size: 2rem;
+        font-weight: bold;
+        text-indent: -25px;
+        text-transform: uppercase;
+        content: 'Step ' counter(item);
+        counter-increment: item;
+    }
+    .item::after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+        background-position: center left;
+        background-repeat: no-repeat;
+        content: '';
+    }
+    .step1::after {
+        background-image: url(/ui/images/icon-step1.png);
+    }
+    .step2::after {
+        background-image: url(/ui/images/icon-step2.png);
+    }
+    .step3::after {
+        background-image: url(/ui/images/icon-step3.png);
+    }
+}
+.Bumper {
+    background-color: $blue-gray;
+    color: rgb(255,255,255);
+
+    .heading {
+        margin: 0;
+        margin-right: 8%;
+    }
+    p {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.Footer {
+    min-height: 30px;
+    line-height: 30px;
+    .Frame {
+        overflow: hidden;
+    }
+    .copyright {
+        display: block;
+        margin-bottom: 1em;
+        line-height: 2;
+    }
+    .download {
+        display: block;
+        margin-top: -14px;
+        color: rgb(102, 102, 102);
+        font-size: 1.4rem;
+    }
+    .Social {
+        margin: 0;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .HowTo .item {
+        float: left;
+        width: 29%;
+        text-align: justify;
+        &::before {
+            margin-left: 0;
+            text-align: center;
+            text-indent: 0;
+        }
+    }
+    .HowTo .item:nth-child(2) {
+        margin: 0 40px;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .HowTo .item {
+        min-height: 100px;
+        padding: 0 0 0 120px;
+        &::after {
+            left: 0;
+        }
+    }
+}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .Header {
+        position: relative;
+        min-height: 675px;
+        padding-top: 100px;
+
+        .logo {
+            position: absolute;
+            left: 8.333%;
+            margin: 0;
+        }
+        .tagline {
+            position: absolute;
+            left: 8.333%;
+            top: 240px;
+            width: 400px;
+            margin: 0;
+            text-align: center;
+        }
+        .Button {
+            position: absolute;
+            left: 8.333%;
+            top: 330px;
+            width: 200px;
+            margin-left: 70px;
+            padding: 1.041666667% 2.083333334%;
+        }
+
+        .Social {
+            position: absolute;
+            top: 50px;
+            right: 8.333%;
+            .url {
+                margin-left: 10px;
+            }
+        }
+    }
+    .Body {
+        text-align: left;
+        .Heading {
+            margin-left: 8.333%;
+        }
+    }
+    .Product {
+        .image {
+            float: right;
+            position: relative;
+            top: -500px;
+            z-index: 1;
+        }
+    }
+    .HowTo  {
+        text-align: center;
+        .item {
+            float: left;
+            width: 20%;
+            min-height: 100px;
+            padding: 0 20px 0 120px;
+            &::after {
+                left: 50px;
+            }
+        }
+        .Heading {
+            margin-left: 0;
+        }
+    }
+    .Testimonials {
+        .Heading {
+            margin-left: 0;
+        }
+    }
+    .Bumper {
+        .Button {
+            float: right;
+            margin: 0;
+            padding: .75em 1em;
+        }
+    }
+    .Footer {
+        .copyright {
+            float: left;
+            height: 50px;
+            margin-bottom: 0;
+        }
+        .download {
+            text-align: left;
+            text-indent: 20px;
+        }
+        .Social {
+            float: right;
+            margin-bottom: 0;
+            .url {
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}

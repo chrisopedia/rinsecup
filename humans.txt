@@ -1,0 +1,27 @@
+/* TEAM */
+
+Owner: Dan McNab.
+Site: therinsecup@gmail.com
+Twitter: @rinsecup
+Location: Huntington Beach, CA, United States of America.
+
+Developer: Newton.
+Site: http://chrisopedia.com/
+Twitter: @chrisOHpedia
+Location: Redondo Beach, CA, United States of America.
+
+Designer: Kyle Taylor.
+Site: http://chrisopedia.com/
+Twitter: @ktkyletaylor
+Location: Los Angeles, CA, United States of America.
+
+Logo Designer: mike mirsky.
+Site: http://rightmindgrafix.com/
+Location: Huntington Beach, CA, United States of America.
+
+/* SITE */
+
+Last update: 2014/01/01
+Standards: HTML(5), CSS(3), Javascript
+Components: Grunt, Bower, jQuery, Normalize CSS, Symbolicons, Symbolset
+Software: Mac OS X Mavericks, ViM, Photoshop, IconSlate, Google Chrome, Ghostlab
