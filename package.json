@@ -1,0 +1,46 @@
+{
+  "name": "rinsecup",
+  "private": true,
+  "version": "0.1.0",
+  "homepage": "http://chrisopedia.github.io/rinsecup",
+  "author": {
+    "name": "Newton",
+    "url": "http://chrisopedia.com/about"
+  },
+  "description": "Rinse Cup: Clean Up marketing page.",
+  "keywords": [
+    "rinsecup",
+    "tattoo",
+    "clean up",
+    "rinse cup clean up",
+    "disposal"
+  ],
+  "main": [
+    "./index.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisopedia/rinsecup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisopedia/rinsecup/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/chrisopedia/rinsecup/blob/master/LICENSE.md"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.4.0",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-jekyll": "~0.4.0"
+  }
+}
