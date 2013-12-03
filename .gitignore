@@ -9,6 +9,3 @@ node_modules
 
 # jekyll
 _site
-
-# build
-ui/compressed
