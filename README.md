@@ -1,5 +1,7 @@
 # Rinse Cup: Clean Up
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisopedia/rinsecup/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 The marketing page for Dan McNab's new sanitary product for the tattoo industry.
 
 ## Technologies Used
@@ -20,7 +22,3 @@ The marketing page for Dan McNab's new sanitary product for the tattoo industry.
 
 1. `bower install`
 2. `npm install`
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisopedia/rinsecup/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
