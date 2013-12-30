@@ -171,7 +171,6 @@ p {
   text-transform: uppercase;
 }
 .Header p {
-  margin: 0;
   font-size: 1.4rem;
   text-align: center;
 }
@@ -266,10 +265,9 @@ p {
 
 .Footer {
   min-height: 30px;
-  line-height: 30px;
-}
-.Footer .Frame {
   overflow: hidden;
+  padding: 4.1666667% 0;
+  line-height: 30px;
 }
 .Footer .copyright {
   display: block;
@@ -337,6 +335,7 @@ p {
     position: absolute;
     top: 400px;
     left: 8.333%;
+    margin: 0;
     margin-left: 80px;
   }
   .Header .Button {
@@ -396,6 +395,10 @@ p {
     padding: .75em 1em;
   }
 
+  .Footer {
+    padding-right: 8.333%;
+    padding-left: 8.333%;
+  }
   .Footer .copyright {
     float: left;
     height: 50px;
