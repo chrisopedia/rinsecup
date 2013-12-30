@@ -231,10 +231,9 @@ p {
 }
 .Footer {
     min-height: 30px;
+    overflow: hidden;
+    padding: 4.1666667% 0;
     line-height: 30px;
-    .Frame {
-        overflow: hidden;
-    }
     .copyright {
         display: block;
         margin-bottom: 1em;
@@ -371,6 +370,8 @@ and (min-width : 1224px) {
         }
     }
     .Footer {
+        padding-right: 8.333%;
+        padding-left: 8.333%;
         .copyright {
             float: left;
             height: 50px;
