@@ -4,3 +4,20 @@ markdown: redcarpet
 pygments: true
 include: ['.htaccess']
 exclude: ['bower.json', 'Gruntfile.js', 'package.json', 'node_modules', 'config', 'resources']
+
+suppliers:
+    - title: Eikon Tattoo Equipment & Supplies
+      url: http://www.eikondevice.com/product/rinsecup-cleanup-65-oz180-g-bottle
+      image: eikon-device.png
+    - title: RCS Supply
+      image: rcs.png
+      url: http://rcssupply.com/products/rinsecup-cleanup
+    - title: Central Tattoo Supplies
+      image: central-tattoo-supplies.png
+      url: http://centraltattoosupplies.co.uk/proddetail.asp?prod=CT4310
+    - title: Nuclear Tattoo Supply
+      image: nuclear-tattoo-supply.png
+      url: http://www.nucleartattoo.com/rinsecup-cleanup.html
+    - title: SD Tattoo Supply
+      image: sd-tattoo-supply.png
+      url: http://www.sdtattoosupply.com/

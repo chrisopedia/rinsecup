@@ -1,3 +1,10 @@
+/* extends */
+.NOLIST, .Social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 @font-face {
   font-family: 'Mongolian Baiti';
   src: url("../fonts/mongolian-baiti/regular.eot");
@@ -33,13 +40,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* extends */
-.NOLIST, .Social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -263,10 +263,24 @@ p {
   margin-left: 0;
 }
 
+.Suppliers {
+  text-align: center;
+}
+.Suppliers .heading {
+  margin-left: 0;
+}
+.Suppliers .listing {
+  overflow: auto;
+  border-bottom: 1px solid #acb8c3;
+  padding: 0;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
 .Footer {
   min-height: 30px;
   overflow: hidden;
-  padding: 4.1666667% 0;
+  padding: 0 0 4.1666667%;
   line-height: 30px;
 }
 .Footer .copyright {
@@ -383,6 +397,14 @@ p {
   }
   .HowTo .Heading {
     margin-left: 0;
+  }
+
+  .Suppliers li {
+    float: left;
+    width: 20%;
+  }
+  .Suppliers li img {
+    height: 100px;
   }
 
   .Testimonials .Heading {

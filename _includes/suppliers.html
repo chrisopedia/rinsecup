@@ -1,0 +1,9 @@
+<section id="suppliers" class="Suppliers">
+    <div class="Frame">
+		<h2 class="Heading">Available At</h2>
+		<ul class="listing">
+			{% for supplier in site.suppliers %}
+				<li><a href="{{ supplier.url }}" title="{{ supplier.title }}"><img src="/media/images/suppliers/{{ supplier.image }}" alt="{{ supplier.title }} logo" /></a></li>
+			{% endfor %}
+    </div>
+</section>
