@@ -1,5 +1,7 @@
 # Rinse Cup: Clean Up
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/chrisopedia/rinsecup.com.svg)](https://greenkeeper.io/)
+
 The marketing page for Dan McNab's new sanitary product for the tattoo industry.
 
 ## Technologies Used
